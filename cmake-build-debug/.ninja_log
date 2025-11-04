@@ -1,15 +1,6 @@
 # ninja log v6
-1	495	1762128400244610709	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-496	586	1762128400739990168	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
-16	618	1762239555694487080	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-619	776	1762239556296662309	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
-19	658	1762290243266364149	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-658	797	1762290243905964442	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
-11	665	1762292765857100995	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-665	775	1762292766511409601	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
-6	615	1762292809512241675	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-615	707	1762292810120826033	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
-5	615	1762293178089249942	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
-615	721	1762293178698920554	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
 5	652	1762293703637987637	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
 652	759	1762293704284745338	Group174_Project2_EdgeLords	8f81a19fcfe79c3b
+4	567	1762297492049718568	CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o	8549732c2147b3ca
+5	569	1762297492050555059	CMakeFiles/Group174_Project2_EdgeLords.dir/Graph.cpp.o	e62d59dd0d77bf75
+569	679	1762297492614920953	Group174_Project2_EdgeLords	be7196832a70c01b
