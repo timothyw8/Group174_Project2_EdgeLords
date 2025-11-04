@@ -25,6 +25,7 @@ public:
     void addEdge(string src, string dst, string type, double cost, double time) {
         edges[src].push_back(Edge(dst, type, cost, time));
     }
+
     const map<string, vector<Edge>>& getAdjList() const{
       return edges;
     }
