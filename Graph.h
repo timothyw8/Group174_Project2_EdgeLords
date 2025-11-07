@@ -17,6 +17,7 @@ struct Edge {
 
     Edge();
     Edge(string t, string ty, double co, double ti);
+    void printEdge();
 };
 
 class Graph {
@@ -26,5 +27,6 @@ public:
     void addEdge(string src, string dst, string type, double cost, double time);
     void addCity(string city);
     vector<string> getCities();
-
+    void generateRandEdges();
+    map<string, vector<Edge>> getEdges();
 };

@@ -4,6 +4,7 @@
 #include <vector>
 #include <sstream>
 #include "Graph.h"
+#include <set>
 using namespace std;
 
 int main() {
@@ -17,17 +18,29 @@ int main() {
     Graph temp;
     string line;
     getline(file,line);
-;   while (getline(file, line)) {
+    set<string> cities_set;
+    while (getline(file, line)) {
         stringstream ss(line);
         string city;
         if (getline(ss,city,',')) {
-            temp.addCity(city);
+            cities_set.insert(city);
         }
     }
-    vector<string> cities = temp.getCities();
-    for (auto city: cities) {
-        cout<<city<<endl;
+    for (auto city: cities_set) {
+        temp.addCity(city);
     }
+    temp.generateRandEdges();
+    map<string, vector<Edge>> edges = temp.getEdges();
+    for (auto city: edges) {
+        cout<<city.first<<" = ";
+        for (auto edge: city.second) {
+            edge.printEdge();
+        }
+        cout<<endl;
+    }
+
+    cout<<cities_set.size()<<endl;
+
 
     return 0;
 }
