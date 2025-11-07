@@ -61,6 +61,18 @@ build CMakeFiles/Group174_Project2_EdgeLords.dir/Graph.cpp.o: CXX_COMPILER__Grou
   OBJECT_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
   OBJECT_FILE_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
 
+build CMakeFiles/Group174_Project2_EdgeLords.dir/Dijkstra.cpp.o: CXX_COMPILER__Group174_Project2_EdgeLords_unscanned_Debug /Users/timothywang/Downloads/UF/Fall$ 2025/COP3530$ -$ Data$ Structures$ and$ Algorithms/Group174_Project2_EdgeLords/Dijkstra.cpp || cmake_object_order_depends_target_Group174_Project2_EdgeLords
+  DEP_FILE = CMakeFiles/Group174_Project2_EdgeLords.dir/Dijkstra.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
+  OBJECT_FILE_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
+
+build CMakeFiles/Group174_Project2_EdgeLords.dir/BellmanFord.cpp.o: CXX_COMPILER__Group174_Project2_EdgeLords_unscanned_Debug /Users/timothywang/Downloads/UF/Fall$ 2025/COP3530$ -$ Data$ Structures$ and$ Algorithms/Group174_Project2_EdgeLords/BellmanFord.cpp || cmake_object_order_depends_target_Group174_Project2_EdgeLords
+  DEP_FILE = CMakeFiles/Group174_Project2_EdgeLords.dir/BellmanFord.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
+  OBJECT_FILE_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Group174_Project2_EdgeLords
@@ -69,7 +81,7 @@ build CMakeFiles/Group174_Project2_EdgeLords.dir/Graph.cpp.o: CXX_COMPILER__Grou
 #############################################
 # Link the executable Group174_Project2_EdgeLords
 
-build Group174_Project2_EdgeLords: CXX_EXECUTABLE_LINKER__Group174_Project2_EdgeLords_Debug CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o CMakeFiles/Group174_Project2_EdgeLords.dir/Graph.cpp.o
+build Group174_Project2_EdgeLords: CXX_EXECUTABLE_LINKER__Group174_Project2_EdgeLords_Debug CMakeFiles/Group174_Project2_EdgeLords.dir/main.cpp.o CMakeFiles/Group174_Project2_EdgeLords.dir/Graph.cpp.o CMakeFiles/Group174_Project2_EdgeLords.dir/Dijkstra.cpp.o CMakeFiles/Group174_Project2_EdgeLords.dir/BellmanFord.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/Group174_Project2_EdgeLords.dir
   POST_BUILD = :

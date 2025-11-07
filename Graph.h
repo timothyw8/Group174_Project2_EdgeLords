@@ -2,10 +2,7 @@
 // Created by Timothy Wang on 11/4/25.
 //
 
-#ifndef GRAPH_H
-#define GRAPH_H
-
-#endif //GRAPH_H
+#pragma once
 #include <map>
 using namespace std;
 
@@ -26,7 +23,9 @@ class Graph {
 public:
     void addEdge(string src, string dst, string type, double cost, double time);
     void addCity(string city);
-    vector<string> getCities();
+    vector<string> getCities() const;
     void generateRandEdges();
     map<string, vector<Edge>> getEdges();
+    const map<string, vector<Edge>>& getAdjList() const;
+
 };

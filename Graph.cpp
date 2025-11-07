@@ -30,7 +30,7 @@ void Graph::addEdge(string src, string dst, string type, double cost, double tim
 void Graph::addCity(string city) {
     cities.push_back(city);
 }
-vector<string> Graph::getCities() {
+vector<string> Graph::getCities() const{
     return cities;
 }
 void Graph::generateRandEdges() {
@@ -60,3 +60,6 @@ void Edge::printEdge() {
 }
 
 
+const map<string, vector<Edge>>& Graph::getAdjList() const {
+    return edges;
+}
