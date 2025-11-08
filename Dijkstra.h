@@ -7,7 +7,7 @@
 using namespace std;
 
 struct nodeDist {
-    string nodeName;
+    City node;
     double dist;
 
     bool operator>(const nodeDist &other) const;
@@ -15,7 +15,7 @@ struct nodeDist {
 
 class Dijkstra {
 public:
-    static map<string, double> dijkstraShortestPath(const Graph& graph, const string& src);
+    static map<City, double> dijkstraShortestPath(Graph& graph, const City& src);
 };
 
 

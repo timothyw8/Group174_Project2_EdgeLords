@@ -186,7 +186,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Group174_Project2_EdgeLords::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Group174_Project2_EdgeLords-Debug-202f193241ddb7965c18.json",
+					"jsonFile" : "target-Group174_Project2_EdgeLords-Debug-6b27e2dc20bd4684f5cb.json",
 					"name" : "Group174_Project2_EdgeLords",
 					"projectIndex" : 0
 				},
@@ -200,7 +200,7 @@
 				{
 					"directoryIndex" : 6,
 					"id" : "sfml-graphics::@98af38147d5fa7e70f61",
-					"jsonFile" : "target-sfml-graphics-Debug-661cc3b0e884ca5ce5fd.json",
+					"jsonFile" : "target-sfml-graphics-Debug-102183caff95aea1c7fe.json",
 					"name" : "sfml-graphics",
 					"projectIndex" : 1
 				},

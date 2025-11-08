@@ -6,26 +6,38 @@
 #include <map>
 using namespace std;
 
+struct City {
+    string name;
+    double x_coord;
+    double y_coord;
+
+    City();
+    City(string name, double x_coord, double y_coord);
+    void printCity() const;
+    bool operator<(const City& other) const;
+};
+
 struct Edge {
-    string to;
+    City to;
     string type;
     double cost;
     double time;
 
     Edge();
-    Edge(string t, string ty, double co, double ti);
+    Edge(string t, double x, double y, string ty, double co, double ti);
     void printEdge();
 };
 
 class Graph {
-    map<string, vector<Edge>> edges;
+    map<City, vector<Edge>> edges;
     vector<string> cities;
+    map<string, pair<double,double>> coordinates;
 public:
-    void addEdge(string src, string dst, string type, double cost, double time);
-    void addCity(string city);
+    void addEdge(City src, string dst, string type, double cost, double time);
+    void addCity(string city, double x_coor, double y_coor);
     vector<string> getCities() const;
     void generateRandEdges();
-    map<string, vector<Edge>> getEdges();
-    const map<string, vector<Edge>>& getAdjList() const;
+    map<City, vector<Edge>>& getEdges();
+    const map<City, vector<Edge>>& getAdjList();
 
 };
