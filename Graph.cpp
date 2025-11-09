@@ -68,6 +68,13 @@ void Graph::generateRandEdges() {
 map<City, vector<Edge>>& Graph::getEdges() {
     return edges;
 }
+bool City::operator==(const City& other) const {
+    return name == other.name;
+}
+bool City::operator<(const City& other) const {
+    return name < other.name;
+}
+
 void Edge::printEdge() {
     cout<<"To: "<<to.name<<", Type: "<<type<<", Cost: "<<cost<<", Time: "<<time<<" | ";
 }
@@ -75,9 +82,6 @@ void City::printCity() const{
     cout<<"Name: "<<name<<"X: "<<x_coord<<"Y: "<<y_coord<<" ";
 }
 
-bool City::operator<(const City& other) const {
-    return name < other.name;
-}
 
 
 const map<City, vector<Edge>>& Graph::getAdjList() {

@@ -7,7 +7,6 @@
 #include <vector>
 #include <string>
 using namespace std;
-
-void startGUI(const vector<string>& cities);
+void startGUI(Graph& graph, const std::vector<std::string>& cities);
 
 #endif //GUI_H

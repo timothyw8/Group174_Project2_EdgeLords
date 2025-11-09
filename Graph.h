@@ -15,6 +15,7 @@ struct City {
     City(string name, double x_coord, double y_coord);
     void printCity() const;
     bool operator<(const City& other) const;
+    bool operator==(const City& other) const;
 };
 
 struct Edge {

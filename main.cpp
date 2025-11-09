@@ -52,95 +52,13 @@ int main() {
         }
         catch (const invalid_argument&) {
             continue;
-            cout<<"Invalid number of parts"<<endl;
         }
     }
 
     temp.generateRandEdges();
-    map<City, vector<Edge>> edges = temp.getEdges();
-    // for (auto city: edges) {
-    //     city.first.printCity();
-    //     for (auto edge: city.second) {
-    //         edge.printEdge();
-    //     }
-    //     cout<<endl;
-    // }
-    // cout<<temp.getEdges().size();
     vector<string> cities = temp.getCities();
-    // // startGUI(cities);
-    Dijkstra dij;
-    map<City, double> dijResult;
-    string src, dest;
+    //GUI
+    startGUI(temp, cities);
 
-    cout<<"Please enter the source: ";
-    cin>>src;
-    cout<<src<<": "<<endl;
-    City srcObj;
-    for (auto to: edges) {
-        if (to.first.name==src) {
-            to.first.printCity();
-            srcObj = to.first;
-        }
-    }
-
-    cout<<endl;
-    cout<<"Please enter the destination: ";
-    cin>>dest;
-    cout<<endl;
-    City destObj;
-    for (auto to: edges) {
-        if (to.first.name==dest) {
-            to.first.printCity();
-            destObj = to.first;
-        }
-    }
-    dijResult = dij.dijkstraShortestPath(temp,srcObj);
-    cout<<dijResult[destObj]<<endl;
-
-    //=====================^^Dijkstra^^===============================
-
-    //=====================BellmanFord================================
-
-    // Astar bel;
-    // map<string, double> belResult;
-    // string src1, dest1;
-    //
-    // cout<<"Please enter the source: ";
-    // cin>>src1;
-    // cout<<src1<<": "<<endl;
-    // for (auto to: edges[src1]) {
-    //     to.printEdge();
-    // }
-    // cout<<endl;
-    // cout<<"Please enter the destination: ";
-    // cin>>dest1;
-    // cout<<endl;
-    // belResult = bel.bellmanShortestPath(temp,src1);
-    // cout<<belResult[dest1]<<endl;
-
-    // Graph g;
-    // g.addCity("A");
-    // g.addCity("B");
-    // g.addCity("C");
-    //
-    // g.addEdge("A", "B", "ground", 10, 2);
-    // g.addEdge("A", "C", "air", 15, 1);
-    // g.addEdge("B", "C", "ground", 2, 0.5);
-    //
-    // auto dist = Dijkstra::dijkstraShortestPath(g, "A");
-    //
-    // auto dist2 = BellmanFord::bellmanShortestPath(g, "A");
-    //
-    // for (const auto& [city, cost] : dist) {
-    //     cout << city << " : ";
-    //     if (cost == numeric_limits<double>::max()) cout << "INF\n";
-    //     else cout << cost << endl;
-    // }
-    //
-    // for (const auto& [city, cost] : dist2) {
-    //     cout << city << " : ";
-    //     if (cost == numeric_limits<double>::max()) cout << "INF\n";
-    //     else cout << cost << endl;
-    // }
     return 0;
 }
