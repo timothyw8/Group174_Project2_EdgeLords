@@ -11,6 +11,8 @@
 
 using namespace std;
 
+//Using data downloaded from https://simplemaps.com/data/us-cities
+//Using arial font downloaded from https://github.com/kavin808/arial.ttf
 
 int main() {
     ifstream file("uscities.csv");

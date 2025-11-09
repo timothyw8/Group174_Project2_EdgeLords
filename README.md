@@ -16,3 +16,6 @@ How To Use this Program
 8. "Execution time: "  should appear right below, which represents the time it took for the program to execute the selected algorithm
 
 9. Close the window to stop the program
+
+Database Citation: https://simplemaps.com/data/us-cities
+Font Download Citation: https://github.com/kavin808/arial.ttf
